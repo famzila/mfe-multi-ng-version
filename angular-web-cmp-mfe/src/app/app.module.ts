@@ -18,9 +18,6 @@ import { BRouteComponent } from './components/b-route/b-route.component';
     AppRoutingModule
   ],
   providers: [
-    //   {
-    //   provide: APP_BASE_HREF, useValue: 'elt-mfe1'
-    // }
 ],
   bootstrap: []
 })

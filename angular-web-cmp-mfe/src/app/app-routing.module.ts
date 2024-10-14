@@ -15,11 +15,11 @@ const routes: Routes = [
     path: 'mfe/b-route',
     loadComponent: () => import('./components/b-route/b-route.component').then(m => m.BRouteComponent)
   },
+  { path: '**', redirectTo: '' } 
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes, {
-      useHash: true })],
+  imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
